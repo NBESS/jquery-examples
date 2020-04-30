@@ -11,11 +11,10 @@
     HINT: lookup .val()
     */
     $(function () {
-      // Declare variables
-      
+      // Declare variables      
       let $clearButton = $('#clear-button');
       let $saveButton = $('#save-button');
-      let $log = $('log');
+      let $log = $('#log');
 
       $clearButton.hide();
 
@@ -29,6 +28,7 @@
         let $textInput = $('#text-field').val();
         let $newText = $('<li>', {'text': $textInput});
         $('li:last').after($newText);
+
         // $log.append($newText)
         $clearButton.show();
       })
